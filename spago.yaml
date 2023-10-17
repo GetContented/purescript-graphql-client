@@ -1,0 +1,55 @@
+package:
+  dependencies:
+  - aff
+  - affjax
+  - affjax-node
+  - affjax-web
+  - argonaut-codecs
+  - argonaut-core
+  - arrays
+  - bifunctors
+  - console
+  - control
+  - datetime
+  - debug
+  - effect
+  - either
+  - enums
+  - filterable
+  - foldable-traversable
+  - foreign
+  - foreign-object
+  - functions
+  - halogen-subscriptions
+  - heterogeneous
+  - http-methods
+  - integers
+  - lists
+  - maybe
+  - media-types
+  - newtype
+  - now
+  - nullable
+  - numbers
+  - ordered-collections
+  - partial
+  - prelude
+  - psci-support
+  - quickcheck
+  - record
+  - spec
+  - spec-discovery
+  - string-parsers
+  - strings
+  - transformers
+  - tuples
+  - typelevel-lists
+  - unfoldable
+  - unicode
+  - unsafe-coerce
+  - variant
+  name: graphql-client
+workspace:
+  extra_packages: {}
+  package_set:
+    registry: 20.0.3
