@@ -1,5 +1,5 @@
 import 'isomorphic-unfetch';
-import { createClient, defaultExchanges, subscriptionExchange } from '@urql/core';
+import { createClient, dedupExchange, cacheExchange, fetchExchange, subscriptionExchange } from '@urql/core';
 import {createClient as createWsClient} from 'graphql-ws';
 
 const createClient_ = function (opts) {
@@ -28,6 +28,8 @@ const createClient_ = function (opts) {
         })
       ]
     : []
+
+  const defaultExchanges = [dedupExchange, cacheExchange, fetchExchange]
 
   return createClient({
     url: opts.url,

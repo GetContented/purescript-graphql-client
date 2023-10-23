@@ -1,0 +1,16 @@
+package:
+  dependencies:
+    - aff
+    - console
+    - graphql-client
+    - maybe
+    - newtype
+    - prelude
+    - typelevel-lists
+  name: my-project
+workspace:
+  extra_packages:
+    graphql-client:
+      path: ../..
+  package_set:
+    registry: 20.0.3
