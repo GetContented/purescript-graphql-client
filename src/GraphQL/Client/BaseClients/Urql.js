@@ -1,6 +1,7 @@
 import 'isomorphic-unfetch';
 import { createClient, dedupExchange, cacheExchange, fetchExchange, subscriptionExchange } from '@urql/core';
-import {createClient as createWsClient} from 'graphql-ws';
+import { createClient as createWsClient } from 'graphql-ws';
+import { subscribe, pipe } from 'wonka';
 
 const createClient_ = function (opts) {
 
@@ -106,8 +107,6 @@ export function mutationImpl (client) {
 }
 
 export function subscriptionImpl (client) {
-  const { subscribe, pipe } = require('wonka')
-
   return function (query) {
     return function (variables) {
       return function (callback) {
